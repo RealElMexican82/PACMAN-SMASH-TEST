@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<nav>
+ <a href="home.html">Home</a>
+ <a href="matchup.html">Matchups</a>
+</nav>
+
+<head>
+ <title>About Me|PAC-MAN in Smash Ultimate</title>
+</head>
+
+<body>
+<h1>Hi!</h1>
+<p>Hey there, my name is Mexi and I am a Victorian Pac-Man player. I started playing PAC-MAN in May 2023, after Minecraft Steve was banned in Australia, because they play similarly. My most recent rank is 32nd in VIC during the 2025 Winter season.</p>
+<img id="myPfP" src ="D:\WEB AT3\AT3_images\chillguy.jpg" alt="My Discord profile picture, which is PAC-MAN holding the bell with his final smash active, the tag above reading CHILL GUY." width="335" height="335">
+<button onClick="hideImage()">Toggle Image</button>
+
+
+
+<h1>General Enquiries</h1>
+<p>If you'd like to get in touch, drop your information in the form below and I'll shoot you a message!</p>
+<form>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br><br>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br><br>
+
+
+<label for="subject">Subject:</label><br>
+<input type="text" id="subject" name="subject"><br><br>
+
+<label for="message">Message:</label>
+<textarea id="message" name"message"></textarea><br><br>
+
+<input type="submit" value="submit">
+
+</form>
+
+<script>
+ function hideImage() {
+    var img = document.getElementById("myPfP");
+	if (img.style.display === "none") {
+	img.style.display = "block";
+	} else {
+	img.style.display = "none";
+	}
+	}
+</script>
+</body>
+
+</html>
